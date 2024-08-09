@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+    <meta content="text/html" charset="UFT-8">
+    <link rel="stylesheet" href="Css/brackets.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+      </style>
+    <title> Predicción Mundial &#183 2026 </title>
+</head>
+
+<body onload = "cargarDatos()">
+    
+    <div class = "cabecera">
+        <div class = "logo" onclick="location.href='index.html'">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+              </svg>
+        </div>
+        <div class = "titulo">
+            <center><label id="titulo">Predicción del Mundial</label></center>
+        </div>
+        <div class = "tiempo">
+            <center><label id="hora"></label></center>
+        </div>
+    </div>
+    
+    <div class ="contenedor">
+        <div class = "izquierda octavos-izquierda">
+            <div class="equipo octavos-1I">
+                <div class = "bandera octavos-1I">
+                    
+                </div>
+               
+
+                <label>: </label>
+                <label class="resultado octavos-1I">0</label>
+            </div>
+            <div class="equipo octavos-2I">
+                <div class = "bandera octavos-2I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-2I">0</label>
+            </div>
+            <div class="equipo octavos-3I">
+                <div class = "bandera octavos-3I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-3I">0</label>
+            </div>
+            <div class="equipo octavos-4I">
+                <div class = "bandera octavos-4I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-4I">0</label>
+            </div>
+            <div class="equipo octavos-5I">
+                <div class = "bandera octavos-5I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-5I">0</label>
+            </div>
+            <div class="equipo octavos-6I">
+                <div class = "bandera octavos-6I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-6I">0</label>
+            </div>
+            <div class="equipo octavos-7I">
+                <div class = "bandera octavos-7I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-7I">0</label>
+            </div>
+            <div class="equipo octavos-8I">
+                <div class = "bandera octavos-8I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado octavos-8I">0</label>
+            </div>
+        </div>
+        <div class="izquierda cuartos-izquierda">
+            <div class="equipo cuartos-1I">
+                <div class = "bandera cuartos-1I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado cuartos-1I"></label>
+            </div>
+            <div class="equipo cuartos-2I">
+                <div class = "bandera cuartos-2I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado cuartos-2I"></label>
+            </div>
+            <div class="equipo cuartos-3I">
+                <div class = "bandera cuartos-3I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado cuartos-3I"></label>
+            </div>
+            <div class="equipo cuartos-4I">
+                <div class = "bandera cuartos-4I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado cuartos-4I"></label>
+            </div>
+
+        </div>
+        <div class="izquierda semis-izquierda">
+            <div class="equipo semis-1I">
+                <div class = "bandera semis-1I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado semis-1I"></label>
+            </div>
+            <div class="equipo semis-2I">
+                <div class = "bandera semis-2I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado semis-2I"></label>
+            </div>
+            
+        </div>
+        <div class="izquierda final-izquierda">
+            <div class="equipo final-I">
+                <div class = "bandera final-I">
+                    
+                </div>
+                <label>: </label>
+                <label class="resultado final-I"></label>
+            </div>
+            
+        </div>
+
+        <div class="centro bracket-central">
+            <div class="central">
+                <center><label class="mensaje"></label></center>
+                <div class="resultado ganador">
+                    
+                </div>
+                <button class="repetir" hidden>Nueva Simulación</button>
+            </div>
+            
+            
+
+        </div>
+        <div class="derecha final-derecha">
+            <div class="equipo final-D">
+                <label class="resultado final-D"></label>
+                <label>: </label>
+                <div class = "bandera final-D">
+                    
+                </div>
+            </div>
+        </div>
+        <div class = "derecha semis-derecha">
+            <div class="equipo semis-1D">
+                <label class="resultado semis-1D"></label>
+                <label>: </label>
+                <div class = "bandera semis-1D">
+                    
+                </div>
+            </div>
+            <div class="equipo semis-2D">
+                <label class="resultado semis-2D"></label>
+                <label>: </label>
+                <div class = "bandera semis-2D">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="derecha cuartos-derecha">
+            <div class="equipo cuartos-1D">
+                <label class="resultado cuartos-1D"></label>
+                <label>: </label>
+                <div class = "bandera cuartos-1D">
+                    
+                </div>
+            </div>
+            <div class="equipo cuartos-2D">
+                <label class="resultado cuartos-2D"></label>
+                <label>: </label>
+                <div class = "bandera cuartos-2D">
+                    
+                </div>
+            </div>
+            <div class="equipo cuartos-3D">
+                <label class="resultado cuartos-3D"></label>
+                <label>: </label>
+                <div class = "bandera cuartos-3D">
+                    
+                </div>
+            </div>
+            <div class="equipo cuartos-4D">
+                <label class="resultado cuartos-4D"></label>
+                <label>: </label>
+                <div class = "bandera cuartos-4D">
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class = "derecha octavos-derecha">
+            <div class="equipo octavos-1D">
+                <label class="resultado octavos-1D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-1D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-2D">
+                <label class="resultado octavos-2D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-2D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-3D">
+                <label class="resultado octavos-3D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-3D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-4D">
+                <label class="resultado octavos-4D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-4D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-5D">
+                <label class="resultado octavos-5D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-5D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-6D">
+                <label class="resultado octavos-6D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-6D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-7D">
+                <label class="resultado octavos-7D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-7D">
+                    
+                </div>
+            </div>
+            <div class="equipo octavos-8D">
+                <label class="resultado octavos-8D">0</label>
+                <label>: </label>
+                <div class = "bandera octavos-8D">
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <script type="text/javascript" src="Scripts/calculos.js"></script>
+    <script type="text/javascript" src="Scripts/script.js" ></script>
+    <script type="text/javascript" src="Scripts/brackets.js" ></script>
+</body>
+
+
+</html>

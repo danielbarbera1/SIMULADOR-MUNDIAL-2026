@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+    <meta content="text/html" charset="UFT-8">
+    <link rel="stylesheet" href="Css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+      </style>
+    <title> Mundial Qatar 2022</title>
+</head>
+
+<body onload = "setInterval('horaRegistro()', 1000);">
+    
+    
+    <div class = "titulo">
+        <center><label id="titulo">SIMULACIÓN DEL MUNDIAL</label></center>
+    </div>
+    <div class ="contenedor">
+        <div class="banderas">
+            <div class="fila fila-1">
+                <button class = "bandera alemania" onclick="agregar('alemania')" >
+                    <center><img src="imagenes/alemania.png" alt="Alemania"><br>
+                    <label>Alemania</label></center> 
+                </button>
+                <button class = "bandera argentina" onclick="agregar('argentina')">
+                    <center><img src="imagenes/argentina.png" alt="Argentina"><br>
+                    <label>Argentina</label></center>
+                </button>
+                <button class = "bandera belgica" onclick="agregar('belgica')">
+                    <center><img src="imagenes/belgica.png" alt="Belgica"><br>
+                    <label>Belgica</label></center>
+                </button>
+                <button class = "bandera brasil" onclick="agregar('brasil')">
+                    <center><img src="imagenes/brasil.png" alt="Brasil"><br>
+                        <label>Brasil</label></center>
+                </button>
+            </div>
+                
+            <div class="fila fila-2">
+                <button class = "bandera dinamarca" onclick="agregar('dinamarca')">
+                    <center><img src="imagenes/dinamarca.png" alt="Dinamarca"><br>
+                        <label>Dinamarca</label></center>
+                </button>
+                <button class = "bandera corea" onclick="agregar('corea')">
+                    <center><img src="imagenes/corea.png" alt="Corea"><br>
+                        <label>Corea</label></center>
+                </button>
+                <button class = "bandera croacia" onclick="agregar('croacia')">
+                    <center><img src="imagenes/croacia.png" alt="Croacia"><br>
+                        <label>Croacia</label></center>
+                </button>
+                <button class = "bandera españa" onclick="agregar('españa')">
+                    <center><img src="imagenes/espana.png" alt="España"><br>
+                        <label>España</label></center>
+                </button>
+            </div>
+            <div class="fila fila-3">
+                <button class = "bandera francia" onclick="agregar('francia')">
+                    <center><img src="imagenes/francia.png" alt="Francia"><br>
+                        <label>Francia</label></center>
+                </button>
+                <button class = "bandera holanda" onclick="agregar('holanda')">
+                    <center><img src="imagenes/holanda.png" alt="Holanda"><br>
+                        <label>Holanda</label></center>
+                </button>
+                <button class = "bandera inglaterra" onclick="agregar('inglaterra')">
+                    <center><img src="imagenes/inglaterra.png" alt="Inglaterra"><br>
+                        <label>Inglaterra</label></center>
+                </button>
+                <button class = "bandera japon" onclick="agregar('japon')">
+                    <center><img src="imagenes/japon.png" alt="Japon"><br>
+                        <label>Japon</label></center>
+                </button>
+            </div>
+            <div class="fila fila-4">
+                <button class = "bandera marruecos" onclick="agregar('marruecos')">
+                    <center><img src="imagenes/marruecos.png" alt="Marruecos"><br>
+                        <label>Marruecos</label></center>
+                </button>
+                <button class = "bandera mexico" onclick="agregar('mexico')">
+                    <center><img src="imagenes/mexico.png" alt="Mexico"><br>
+                        <label>Mexico</label></center>
+                </button>
+                <button class = "bandera polonia" onclick="agregar('polonia')">
+                    <center><img src="imagenes/polonia.png" alt="Polonia"><br>
+                        <label>Polonia</label></center>
+                </button>
+                <button class = "bandera portugal" onclick="agregar('portugal')">
+                    <center><img src="imagenes/portugal.png" alt="Portugal"><br>
+                        <label>Portugal</label></center>
+                </button>
+            </div>
+            <div class="fila fila-5">
+                <button class = "bandera senegal" onclick="agregar('senegal')">
+                    <center><img src="imagenes/senegal.png" alt="Senegal"><br>
+                        <label>Senegal</label></center>
+                </button>
+                <button class = "bandera suiza" onclick="agregar('suiza')">
+                    <center><img src="imagenes/suiza.png" alt="Suiza"><br>
+                        <label>Suiza</label></center>
+                </button>
+                <button class = "bandera uruguay" onclick="agregar('uruguay')">
+                    <center><img src="imagenes/uruguay.png" alt="Uruguay"><br>
+                        <label>Uruguay</label></center>
+                </button>
+                <button class = "bandera usa" onclick="agregar('usa')">
+                    <center><img src="imagenes/usa.png" alt="Usa"><br>
+                        <label>Usa</label></center>
+                </button>
+            </div>
+        </div>
+        <div class="calcular">
+            <center><button id = "seleccionar" class="boton comenzar" onclick="start()">Calcular</button></center>
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="Scripts/script.js" ></script>
+</body>
+
+
+</html>

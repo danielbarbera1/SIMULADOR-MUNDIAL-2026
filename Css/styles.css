@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    background: rgb(0,25,99);
+    background: linear-gradient(0deg, rgba(0,25,99,1) 8%, rgba(20,55,157,1) 29%, rgba(33,93,241,1) 53%, rgba(31,110,235,1) 74%, rgba(3,24,131,1) 91%);
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    width: 100%;
+    height: 90px;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo{
+    color: ghostwhite;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.banderas{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    padding: 20px;
+    gap: 1em;
+}
+
+.fila{
+   flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.calcular{
+    flex-basis: 30px;
+}
+
+
+img{
+    width: 45px;
+    object-fit: contain;
+}
+
+.bandera{
+    width: 200px;
+    height: 75px;
+    font-family: Roboto;
+    font-weight: 800;
+    color: rgba(38, 38, 38, 0.779);
+    background-color: rgba(248, 248, 255, 0.635);
+    border: 2px solid rgba(6, 6, 6, 0.998);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.463);
+    margin: 0px;    
+}
+
+.bandera:hover{
+    transform: translateY(1px);
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.bandera:active{
+    transform: translateY(4px);
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+#seleccionar{
+    width: 200px;
+    height: 45px;
+    font-family: Roboto;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.963);
+    background-color: ghostwhite;
+    border: 2px solid rgba(175, 173, 173, 0.555);
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 7px;
+    box-shadow: 4px 4px 8px rgba(43, 43, 43, 0.47);
+    margin: 0px;
+}
+
+#seleccionar:active{
+    color: black;
+    opacity: 0.7;
+    transition: 0.15s;
+
+    
+}
+
+#seleccionar:hover{
+    transform: translateY(-3px);
+    filter: grayscale(35%);
+    transition: 0.2s;
+    
+}
+
+label{
+    color:rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+button{
+    align-self: center;
+}
