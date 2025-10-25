@@ -21,3 +21,5 @@ git clone https://github.com/danielbarbera1/SIMULADOR-MUNDIAL-2026.git
 
 ### 🏁 Predicción del torneo
 ![Predicción del torneo](assets/prediccion.png)
+
+
